@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Legal — Halal Table</title>
+<title>Email confirmed — Halal Table</title>
 <style>
   :root { color-scheme: light dark; }
   body { margin: 0; background: #FAF6EE; color: #1F2A24; font: 17px/1.6 -apple-system, "Helvetica Neue", Arial, sans-serif; }
@@ -29,7 +29,30 @@
 <body>
 <header><a class="brand" href="./index.html">Halal Table</a><a href="./terms.html">Terms of Use</a><a href="./privacy.html">Privacy Policy</a><a href="./support.html">Support</a></header>
 <main>
-<h1>Halal Table</h1><p>Community-verified halal food, county by county.</p><ul><li><a href="./terms.html">Terms of Use</a></li><li><a href="./privacy.html">Privacy Policy</a></li><li><a href="./support.html">Support</a></li></ul>
+<h1 id="title">Email confirmed</h1>
+<p id="message">Your email address is confirmed. Open Halal Table and sign in with the email and password you just chose.</p>
+<p><a class="button" href="halalfoodapp://">Open Halal Table</a></p>
+<p class="note" id="note">Opened this on a computer? Switch to the app on your phone and sign in there.</p>
+<script>
+(function () {
+  var raw = (location.search.slice(1) + '&' + location.hash.slice(1));
+  var params = {};
+  raw.split('&').forEach(function (pair) {
+    if (!pair) return;
+    var i = pair.indexOf('=');
+    var k = decodeURIComponent(i < 0 ? pair : pair.slice(0, i));
+    params[k] = i < 0 ? '' : decodeURIComponent(pair.slice(i + 1).replace(/\+/g, ' '));
+  });
+  if (location.search || location.hash) history.replaceState(null, '', location.pathname);
+  if (!params.error && !params.error_code) return;
+  document.getElementById('title').textContent = 'That link did not work';
+  document.getElementById('message').textContent =
+    params.error_code === 'otp_expired'
+      ? 'This confirmation link has expired or was already used. If you can sign in to Halal Table, your email is already confirmed. If not, sign up again in the app to get a new link.'
+      : 'Something went wrong confirming your email. Try signing in to Halal Table; if that fails, sign up again to get a new link.';
+  document.getElementById('note').textContent = 'Still stuck? Email cacti_paws.1d@icloud.com.';
+})();
+</script>
 </main>
 <footer>Halal Table is a community directory of halal food. It is not a certifier — see the Terms of Use.</footer>
 </body>
