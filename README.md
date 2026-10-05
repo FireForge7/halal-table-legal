@@ -1,3 +1,5 @@
-# Halal Table — legal pages
+# halaltable.app
 
-Terms of Use and Privacy Policy for the Halal Table iOS app. Static pages only; the app itself lives in a private repository.
+The public website for Halal Table: the home page, Support, Privacy Policy, Terms of Use and the email-confirmed page. Static HTML, CSS, images and fonts only — no app code. Published with GitHub Pages at https://halaltable.app.
+
+These files are generated; edit the source in the app repository and rebuild rather than editing here.

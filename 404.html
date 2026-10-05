@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<base href="https://halaltable.app/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Email confirmed — Halal Table</title>
-<meta name="description" content="Your Halal Table account email is confirmed.">
-<link rel="canonical" href="https://halaltable.app/email-confirmed.html">
+<title>Page not found — Halal Table</title>
+<meta name="description" content="This page does not exist.">
+<link rel="canonical" href="https://halaltable.app/404.html">
 <meta name="theme-color" content="#14523A">
 <meta name="apple-itunes-app" content="app-id=6809083897">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Halal Table">
-<meta property="og:title" content="Email confirmed — Halal Table">
-<meta property="og:description" content="Your Halal Table account email is confirmed.">
-<meta property="og:url" content="https://halaltable.app/email-confirmed.html">
+<meta property="og:title" content="Page not found — Halal Table">
+<meta property="og:description" content="This page does not exist.">
+<meta property="og:url" content="https://halaltable.app/404.html">
 <meta property="og:image" content="https://halaltable.app/assets/img/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -24,7 +25,7 @@
 <meta name="robots" content="noindex">
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
+<a class="skip" href="https://halaltable.app/404.html#main">Skip to content</a>
 <header class="chrome">
   <div class="wrap nav">
     <a class="wordmark" href="./index.html" aria-label="Halal Table home"><img src="./assets/img/brand-mark.svg" alt="" width="34" height="34">Halal Table<span class="diamond" aria-hidden="true"></span><span class="ar" lang="ar">حلال</span></a>
@@ -33,36 +34,11 @@
 </header>
 <main id="main">
 
-<div class="chrome page-head"><div class="wrap"><h1 id="title">Email confirmed</h1></div></div>
+<div class="chrome page-head"><div class="wrap"><h1>Page not found</h1></div></div>
 <div class="prose center">
-<img src="./assets/img/brand-mark.svg" alt="" width="96" height="96" style="margin: 8px auto 18px">
-<p id="message">Your email address is confirmed. Open Halal Table and sign in with the email and password you just chose.</p>
-<p><a class="button solid" href="halalfoodapp://">Open Halal Table</a></p>
-<p class="muted" id="note">Opened this on a computer? Switch to the app on your phone and sign in there.</p>
+<p>That page does not exist. It may have moved when the site did.</p>
+<p><a class="button solid" href="https://halaltable.app/">Go to the home page</a></p>
 </div>
-<script>
-(function () {
-  var raw = (location.search.slice(1) + '&' + location.hash.slice(1));
-  // Strip first: the query and fragment can carry session tokens.
-  if (location.search || location.hash) history.replaceState(null, '', location.pathname);
-  function decode(s) { try { return decodeURIComponent(s); } catch (e) { return s; } }
-  var params = {};
-  raw.split('&').forEach(function (pair) {
-    if (!pair) return;
-    var i = pair.indexOf('=');
-    var k = decode(i < 0 ? pair : pair.slice(0, i));
-    params[k] = i < 0 ? '' : decode(pair.slice(i + 1).replace(/\+/g, ' '));
-  });
-  if (!params.error && !params.error_code) return;
-  document.getElementById('title').textContent = 'That link did not work';
-  document.title = 'That link did not work — Halal Table';
-  document.getElementById('message').textContent =
-    params.error_code === 'otp_expired'
-      ? 'This confirmation link has expired or was already used. If you can sign in to Halal Table, your email is already confirmed. If not, sign up again in the app to get a new link.'
-      : 'Something went wrong confirming your email. Try signing in to Halal Table; if that fails, sign up again to get a new link.';
-  document.getElementById('note').textContent = 'Still stuck? Email support@halaltable.app.';
-})();
-</script>
 </main>
 <footer class="site chrome">
   <div class="wrap cols">
