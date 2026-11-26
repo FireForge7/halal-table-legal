@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <base href="https://halaltable.app/">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Page not found — Halal Table</title>
-<meta name="description" content="This page does not exist.">
+<title>Halal Table — Community-verified halal food near you</title>
+<meta name="description" content="A halal place on Halal Table: see its halal label and how it was checked, and get directions.">
 <link rel="canonical" href="https://halaltable.app/404.html">
 <meta name="theme-color" content="#14523A">
 <meta name="apple-itunes-app" content="app-id=6809083897">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Halal Table">
-<meta property="og:title" content="Page not found — Halal Table">
-<meta property="og:description" content="This page does not exist.">
+<meta property="og:title" content="Halal Table — Community-verified halal food near you">
+<meta property="og:description" content="A halal place on Halal Table: see its halal label and how it was checked, and get directions.">
 <meta property="og:url" content="https://halaltable.app/404.html">
 <meta property="og:image" content="https://halaltable.app/assets/img/og.png">
 <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
 <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
 <link rel="preload" href="./assets/fonts/Cairo-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="./assets/fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="./assets/site.css?v=9c0a8073b1">
+<link rel="stylesheet" href="./assets/site.css?v=1636f592be">
 <meta name="robots" content="noindex">
 </head>
 <body>
@@ -35,10 +35,42 @@
 </header>
 <main id="main">
 
+<div id="not-found">
 <div class="chrome page-head"><div class="wrap"><h1>Page not found</h1></div></div>
 <div class="prose center">
 <p>That page does not exist. It may have moved when the site did.</p>
 <p><a class="button solid" href="https://halaltable.app/">Go to the home page</a></p>
+</div>
+</div>
+<div id="place" data-mode="fallback" hidden>
+<div class="chrome page-head place-head">
+  <div class="wrap">
+    <p class="kicker place-kind" data-f="kind"></p>
+    <h1 data-f="name">Loading this place…</h1>
+    <p class="place-where" data-f="address" hidden></p>
+  </div>
+</div>
+<div class="rule" aria-hidden="true"></div>
+<div class="place">
+  <section class="place-label" data-f="label-box" aria-labelledby="label-title" aria-live="polite">
+    <h2 class="sr" id="label-title">Halal label</h2>
+    <div data-f="label"></div>
+    <p class="place-note" data-f="label-note">Open Halal Table for today’s halal label and how it was checked.</p>
+  </section>
+  <p class="place-gone" data-f="gone" hidden>This place is no longer listed on Halal Table. It may have closed or moved.</p>
+  <ul class="place-actions" data-f="actions" hidden>
+    <li><a class="button solid" data-f="apple-maps" href=""><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Directions in Apple Maps</a></li>
+    <li><a class="button line" data-f="google-maps" href=""><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-6.5-5.6-6.5-11A6.5 6.5 0 0 1 18.5 10c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg>Google Maps</a></li>
+    <li data-f="call-item" hidden><a class="button line" data-f="call" href=""><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Call</a></li>
+    <li data-f="site-item" hidden><a class="button line" data-f="site" href="" rel="nofollow noopener ugc"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span data-f="site-label"></span></a></li>
+  </ul>
+  <div class="place-app">
+    <h2>Reviews, photos and every confirmation are in the app</h2>
+    <p>Halal Table is a free, community-run directory of halal food. Open this place in the app to see who confirmed it and how they know, read reviews, or add what you know.</p>
+    <p><a class="button brass" href="https://apps.apple.com/us/app/halal-table-find-halal-food/id6809083897"><svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></svg>Download on the App Store</a></p>
+    <p class="muted">No iPhone? This page has the address, directions and the current label, and it stays the same link.</p>
+  </div>
+</div>
 </div>
 </main>
 <footer class="site chrome">
@@ -53,6 +85,7 @@
         <li><a href="./support.html">Support</a></li>
         <li><a href="./privacy.html">Privacy Policy</a></li>
         <li><a href="./terms.html">Terms of Use</a></li>
+        <li><a href="./business-terms.html">Business Terms</a></li>
         <li><a href="mailto:support@halaltable.app">support@halaltable.app</a></li>
       </ul>
       <p class="disclaimer">© 2026 Saltbridge Studio · Made in California</p>
@@ -82,5 +115,7 @@
   document.querySelectorAll('[data-reveal]').forEach((el) => io.observe(el));
 })();
 </script>
+<script src="./assets/live-config.js" defer></script>
+<script src="./assets/place.js?v=7054aca1ec" defer></script>
 </body>
 </html>

@@ -139,6 +139,27 @@ h2 { font: 600 clamp(32px, 4.4vw, 44px)/1.12 var(--display); margin: 0 0 14px; }
 .center { text-align: center; }
 .muted { color: var(--muted); }
 
+/* Place pages (scripts/lib/site-places.mjs) */
+[hidden] { display: none !important; }
+.place-head { padding: 34px 0 30px; }
+.place-head .kicker { color: var(--brass-light); }
+.place-head h1 { font: 600 clamp(36px, 5.4vw, 54px)/1.08 var(--display); margin: 0; overflow-wrap: anywhere; }
+.place-where { margin: 12px 0 0; color: var(--chrome-text-2); font-size: 17px; }
+.place { max-width: 760px; margin: 0 auto; padding: 32px 20px 72px; }
+.place-label { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px; }
+.place-certifier { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; margin: 16px 0 0; font-weight: 600; }
+.place-certifier .icon { color: var(--accent-brass); }
+.place-blurb { color: var(--text-2); margin: 12px 0 0; font-size: 16px; }
+.place-note { color: var(--muted); font-size: 15px; margin: 14px 0 0; }
+.place-label [data-f="label"]:empty + .place-note { margin-top: 0; color: var(--text-2); font-size: 16px; }
+.place-gone { background: var(--disp-bg); color: var(--disp-fg); border-radius: var(--radius); padding: 16px 20px; margin: 16px 0 0; font-weight: 600; }
+.place-actions { list-style: none; display: flex; flex-wrap: wrap; gap: 10px; margin: 22px 0 0; padding: 0; }
+.button.line { border: 1.5px solid var(--border); color: var(--text); background: var(--surface); }
+.button.line:hover { border-color: var(--accent); }
+.place-app { margin-top: 40px; padding-top: 28px; border-top: 1px solid var(--border); }
+.place-app h2 { font-size: clamp(26px, 3.4vw, 32px); }
+.place-app p { color: var(--text-2); }
+
 /* Footer */
 footer.site { padding: 40px 0 48px; color: var(--chrome-text-2); font-size: 15px; }
 footer.site .cols { display: flex; flex-wrap: wrap; gap: 24px 40px; justify-content: space-between; align-items: flex-start; }

@@ -1,0 +1,28 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": [
+          "TK8KULA95P.com.shahrearekhan.halaltable"
+        ],
+        "components": [
+          {
+            "/": "/place/*",
+            "comment": "A shared place opens in the app"
+          },
+          {
+            "/": "/place/*/",
+            "comment": "The same with a trailing slash"
+          }
+        ]
+      },
+      {
+        "appID": "TK8KULA95P.com.shahrearekhan.halaltable",
+        "paths": [
+          "/place/*"
+        ]
+      }
+    ]
+  }
+}
